@@ -1,0 +1,77 @@
+*{
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+body{
+    max-width: 400px;
+    padding: 20px;
+    box-shadow: 1px 0 10px rgba(11, 104, 226, 0.705);
+    border-radius:20px
+}
+
+.calculadora{
+    background-color: rgb(1, 11, 39);
+    padding: 10px 20px;
+    border-radius:5px
+}
+.displayer{
+    background-color: rgba(106, 166, 245, 0.486);
+    padding: 10px 20px;
+    border-radius:20px;
+    color: wheat
+}
+
+.allButtons{
+    margin: 10px;
+    display: flex;
+    /* width:80%; */
+    /* justify-content: center; */
+}
+
+button{
+    box-shadow: 1px 0 10px rgba(11, 104, 226, 0.705);
+    cursor: pointer;
+    margin: 6px 5px;
+    border-radius:2px;
+    border: 1px none aliceblue
+}
+.buttonAC{
+    background-color:rgb(236, 223, 39);
+    margin-right: 5px;
+    box-shadow: none;
+    width: 50px;
+}
+.button-igual{
+    background-color:rgb(62, 236, 39);
+    padding:0 8px;
+    box-shadow: none;
+
+}
+
+.operations{
+    display: flex;
+    flex-direction: column;
+}
+
+.operations button{
+    border-radius:30%;
+    width:50px;
+    height: 50px;
+    background-color:rgb(108, 170, 250)
+}
+
+.numbers button{
+    border-radius:30%;
+    width:50px;
+    height: 50px;   
+}
+
+.button-zero{
+    padding:0 50px;
+}
+
+.numbers789, .numbers456, .numbers123{
+    display: flex;
+    flex-wrap: nowrap
+}

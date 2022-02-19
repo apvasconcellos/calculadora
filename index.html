@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="/1200px-Circle-icons-calculator.svg.png">
+    <title>Calculadora</title>
+</head>
+<body>
+    <div class="calculadora">
+        <div class="number1"></div>
+        <div class="displayer">
+            <span id="currentNumber">0</span>
+        </div>
+        <div class="allButtons">
+            <button value="AC" onclick="calculadora(value)" class="buttonAC">AC</button>
+            <div class="numbers">
+                <div class="numbers789">
+                    <button id="7" value="7" onclick="calculadora(value)">7</button>
+                    <button id="8" onclick="calculadora(value)"value="8">8</button>
+                    <button id="9" onclick="calculadora(value)" value="9">9</button>
+                </div>
+                <div class="numbers456">
+                    <button id="4" onclick="calculadora(value)" value="4">4</button>
+                    <button id="5" onclick="calculadora(value)" value="5">5</button>
+                    <button id="6" onclick="calculadora(value)" value="6">6</button>
+                </div>
+                <div class="numbers123">
+                    
+                    <button id="1" onclick="calculadora(value)" value="1">1</button>
+                    <button id="2" onclick="calculadora(value)" value="2">2</button>
+                    <button id="3" onclick="calculadora(value)" value="3">3</button>
+                </div>
+                <button id="0" onclick="calculadora(value)" class="button-zero" value="0">0</button>
+                <button id="," onclick="calculadora(value)" value=".">,</button>
+            </div>
+            <div class="operations">
+                <button id="/" onclick="operator(value)" value="/">/</button>
+                <button id="*" onclick="operator(value)" value="*">*</button>
+                <button id="+" onclick="operator(value)" value="+">+</button>
+                <button id="-" onclick="operator(value)" value="-">-</button>
+            </div>
+            <button value="=" onclick="resultado()" class="button-igual">=</button>
+        </div>
+    </div>
+    <script src="calc.js"></script>
+</body>
+</html>
